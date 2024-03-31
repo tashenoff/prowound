@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+
+
+
+                container: {
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                    },
+                },
+
+
+
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#3b82f6',
+                        octeni: '#b01d57'
+
+                    }
+                }
+            }
+        }
+
+
+    </script>
+
+
+
+
+
+    <style>
+        .bg-home {
+            /* background-image: url(img/a.png); */
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center left;
+            background-color: #e8f3ff;
+
+
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+
+
+        }
+
+
+
+
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #5351e9 50%, #462ac2 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: .5;
+            position: absolute;
+            right: -50%;
+            top: 0;
+            z-index: 2;
+        }
+
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+
+        .bg3 {
+            animation-duration: 5s;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(25%);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="bg-white py-5  w-full bg-opacity-50 z-50">
+        <div class="container mx-auto">
+            <div class="flex lg:flex-row flex-col justify-between items-center">
+                <div class="logo">
+                    <img class="w-[150px]" src="img/logo_sh.png" alt="">
+                </div>
+                <div class="right flex items-center lg-mt-0 mt-10">
+                    <span class="pr-5 uppercase font-bold lg:hidden">горячая линия</span>
+                    <a href="" class="number font-bold text-primary">8 700 570 50 70 </a>
+
+                    <a href="https://wa.link/3tdg9z" class="lg:flex hidden lg:mt-0 items-center ml-5 bg-blue-500 py-3 px-5 rounded-full text-white font-bold">
+
+
+
+
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 418.135 418.135"
+                            xml:space="preserve">
+                            <g>
+                                <path style="fill:#fff;" d="M198.929,0.242C88.5,5.5,1.356,97.466,1.691,208.02c0.102,33.672,8.231,65.454,22.571,93.536
+                    L2.245,408.429c-1.191,5.781,4.023,10.843,9.766,9.483l104.723-24.811c26.905,13.402,57.125,21.143,89.108,21.631
+                    c112.869,1.724,206.982-87.897,210.5-200.724C420.113,93.065,320.295-5.538,198.929,0.242z M323.886,322.197
+                    c-30.669,30.669-71.446,47.559-114.818,47.559c-25.396,0-49.71-5.698-72.269-16.935l-14.584-7.265l-64.206,15.212l13.515-65.607
+                    l-7.185-14.07c-11.711-22.935-17.649-47.736-17.649-73.713c0-43.373,16.89-84.149,47.559-114.819
+                    c30.395-30.395,71.837-47.56,114.822-47.56C252.443,45,293.218,61.89,323.887,92.558c30.669,30.669,47.559,71.445,47.56,114.817
+                    C371.446,250.361,354.281,291.803,323.886,322.197z" />
+                                <path style="fill:#fff;" d="M309.712,252.351l-40.169-11.534c-5.281-1.516-10.968-0.018-14.816,3.903l-9.823,10.008
+                    c-4.142,4.22-10.427,5.576-15.909,3.358c-19.002-7.69-58.974-43.23-69.182-61.007c-2.945-5.128-2.458-11.539,1.158-16.218
+                    l8.576-11.095c3.36-4.347,4.069-10.185,1.847-15.21l-16.9-38.223c-4.048-9.155-15.747-11.82-23.39-5.356
+                    c-11.211,9.482-24.513,23.891-26.13,39.854c-2.851,28.144,9.219,63.622,54.862,106.222c52.73,49.215,94.956,55.717,122.449,49.057
+                    c15.594-3.777,28.056-18.919,35.921-31.317C323.568,266.34,319.334,255.114,309.712,252.351z" />
+                            </g>
+                        </svg>
+
+
+
+                        <span class="button ml-2">Написать в whatsapp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-home relative  overflow-hidden">
+
+
+        <div class="container mx-auto">
+            <div class="flex items-center justify-center lg:h-[600px] h-[490px]">
+
+                <div
+                    class="bg-primary z-40 lg:h-[540px] lg:w-[540px] w-[300px] h-[300px] lg:bottom-0 bottom-[180px] left-0 absolute rounded-full animate-pulse">
+                </div>
+
+                <img class="absolute z-50 lg:max-w-[1240px] max-w-[500px] lg:left-0 -left-[20px] lg:bottom-0 bottom-[180px]"
+                    src="img/a.png" alt="">
+
+
+                <div class="flex lg:py-0 pb-5 lg:px-0 px-5 lg:flex-row flex-col lg:relative absolute bottom-0 bottom-[0px] w-full items-center lg:justify-end justify-center">
+                    <h1 class="lg:text-[45px] text-[24px] font-bold uppercase text-primary">Ваш секрет<br> <b
+                            class="text-octeni">здоровой</b> улыбки!
+                    </h1>
+
+
+                    <a href="https://wa.link/3tdg9z" class="lg:hidden mt-5 w-full flex items-center mx-5 bg-blue-500 py-3 px-5 rounded-full text-white font-bold">
+
+
+
+
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 418.135 418.135"
+                            xml:space="preserve">
+                            <g>
+                                <path style="fill:#fff;" d="M198.929,0.242C88.5,5.5,1.356,97.466,1.691,208.02c0.102,33.672,8.231,65.454,22.571,93.536
+                    L2.245,408.429c-1.191,5.781,4.023,10.843,9.766,9.483l104.723-24.811c26.905,13.402,57.125,21.143,89.108,21.631
+                    c112.869,1.724,206.982-87.897,210.5-200.724C420.113,93.065,320.295-5.538,198.929,0.242z M323.886,322.197
+                    c-30.669,30.669-71.446,47.559-114.818,47.559c-25.396,0-49.71-5.698-72.269-16.935l-14.584-7.265l-64.206,15.212l13.515-65.607
+                    l-7.185-14.07c-11.711-22.935-17.649-47.736-17.649-73.713c0-43.373,16.89-84.149,47.559-114.819
+                    c30.395-30.395,71.837-47.56,114.822-47.56C252.443,45,293.218,61.89,323.887,92.558c30.669,30.669,47.559,71.445,47.56,114.817
+                    C371.446,250.361,354.281,291.803,323.886,322.197z" />
+                                <path style="fill:#fff;" d="M309.712,252.351l-40.169-11.534c-5.281-1.516-10.968-0.018-14.816,3.903l-9.823,10.008
+                    c-4.142,4.22-10.427,5.576-15.909,3.358c-19.002-7.69-58.974-43.23-69.182-61.007c-2.945-5.128-2.458-11.539,1.158-16.218
+                    l8.576-11.095c3.36-4.347,4.069-10.185,1.847-15.21l-16.9-38.223c-4.048-9.155-15.747-11.82-23.39-5.356
+                    c-11.211,9.482-24.513,23.891-26.13,39.854c-2.851,28.144,9.219,63.622,54.862,106.222c52.73,49.215,94.956,55.717,122.449,49.057
+                    c15.594-3.777,28.056-18.919,35.921-31.317C323.568,266.34,319.334,255.114,309.712,252.351z" />
+                            </g>
+                        </svg>
+
+
+
+                        <span class="button ml-2">Написать в whatsapp</span>
+                    </a>
+
+                </div>
+            </div>
+    </section>
+
+
+
+    <div class=" bg-blue-500 text-white py-10 relative overflow-hidden">
+
+
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+
+
+        <div class="container mx-auto">
+            <div class="w-full text-center py-5 rleative z-50">
+                <h3 class="lg:text-[28px] text-[18px] font-bold mb-10 z-50 relative">Октенидол<sup>®</sup><br> быстро и надолго подавляет
+                    рост
+                    бактерий и
+                    грибов,<br> препятствует их размножению и заботится о
+                    здоровой микрофлоре ротовой полости.</h3>
+
+            </div>
+
+            <div class="flex justify-between">
+
+
+                <div class="flex w-1/2 px-8 items-center text-center">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="pt-20">
+        <div class="container mx-auto bg-white">
+
+
+
+            <div class="grid lg:grid-cols-2">
+
+                <div class="shadow-lg border border-gray-200 lg:p-8 px-3 py-8 mr-2 relative -top-[120px] z-50 bg-white">
+
+                    <h3 class="font-bold mb-5 text-blue-500 uppercase ">Показания к применению:</h3>
+                    <ul class="font-bold">
+                        <li class="flex items-center hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>
+
+                            При пародонтитах, гингивитах и стоматитах.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>До и после пародонтальных и хирургических вмешательств в полости рта.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Профилактика и лечение воспалительных заболеваний полости рта.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Для гигиены полости рта при ограниченных возможностях.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Для пациентов с ослабленным иммунитетом для профилактики и лечения грибковых поражений
+                            полости
+                            рта.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>В онкологи, в том числе детской.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Для пациентов, дыхание которых поддерживается искусственным путём.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Обеззараживание при MRSA (метициллин-устойчивый штамм золотистого стафилококка).
+                        </li>
+                    </ul>
+                </div>
+                <div class="shadow-lg border border-gray-200 lg:p-8 px-3 py-8 mr-2  relative -top-[120px] bg-white z-50">
+
+                    <h3 class="font-bold mb-5 text-blue-500 uppercase">Преимущества:</h3>
+                    <ul class="font-bold">
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Широкий антисептический спектр действия.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Не содержит хлоргексидин.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Профилактика и лечение воспалительных заболеваний полости рта.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Не содержит алкоголь.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Не окрашивает и не меняет цвет зубов.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Не вызывает побочных эффектов и не токсичен.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Нет противопоказаний к применению.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Подходит для беременных и самых маленьких детей.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>Не вырабатывается резистентность у микроорганизмов.
+                        </li>
+                        <li class="flex items-start py-2 hover:text-blue-500 cursor-pointer ">
+                            <div class="div">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                    class="w-6 h-6 mr-2 text-blue-500">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>24 часа остаточного действия!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 shadow-lg mb-10">
+                <div class="flex justify-center w-full">
+                    <img class="w-[450px]" src="https://dental.akson.md/514-large_default/oktenidol-md.jpg" alt="">
+                </div>
+
+                <div class="h-full  items-start justify-center flex flex-col bg-gray-50 px-5 lg:py-10 py-5">
+                    <div class="w-full py-5">
+                        <h3 class="text-[32px] font-bold text-blue-500 py-2 uppercase"><span
+                                class="text-primary">Октени</span><span class="text-octeni">дол<sup>®</sup></span></h3>
+                        <p class="py-3 text-[22px]">Антибактериальный ополаскиватель для полости рта</p>
+
+                    </div>
+
+                    <div class="flex flex-col py-3">
+                        <span class="text-[20px] font-bold text-blue-500"><strike
+                                class="text-octeni">12000₸</strike></span>
+                        <div class="flex items-center">
+                            <span class="text-[30px] font-bold text-blue-500 mr-5">9900₸</span> <span
+                                class="uppercase text-[18px] font-bold text-gray-500">Доставка по Казахстану</span>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 w-full flex items-start mt-5 cursor-pointer">
+                        <a href="https://wa.link/3tdg9z"
+                            class="bg-blue-500 py-5 hover:bg-blue-400 px-5 w-full rounded-full text-center uppercase font-bold text-sm text-white">Купить</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-blue-500 py-10">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center text-center font-bold text-white">
+                <p>
+                    Оригинальный немецкий продукт.<br>
+                    Свидетельство о государственной регистрации ЕВРАЗЭС № RU.77.99.34.014.E.044033.10.11 от 21.10.2011
+                    г.
+                </p>
+
+
+
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8 10C8 7.79086 9.79086 6 12 6C14.2091 6 16 7.79086 16 10V11H17C18.933 11 20.5 12.567 20.5 14.5C20.5 16.433 18.933 18 17 18H16.9C16.3477 18 15.9 18.4477 15.9 19C15.9 19.5523 16.3477 20 16.9 20H17C20.0376 20 22.5 17.5376 22.5 14.5C22.5 11.7793 20.5245 9.51997 17.9296 9.07824C17.4862 6.20213 15.0003 4 12 4C8.99974 4 6.51381 6.20213 6.07036 9.07824C3.47551 9.51997 1.5 11.7793 1.5 14.5C1.5 17.5376 3.96243 20 7 20H7.1C7.65228 20 8.1 19.5523 8.1 19C8.1 18.4477 7.65228 18 7.1 18H7C5.067 18 3.5 16.433 3.5 14.5C3.5 12.567 5.067 11 7 11H8V10ZM13 11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11V16.5858L9.70711 15.2929C9.31658 14.9024 8.68342 14.9024 8.29289 15.2929C7.90237 15.6834 7.90237 16.3166 8.29289 16.7071L11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071L15.7071 16.7071C16.0976 16.3166 16.0976 15.6834 15.7071 15.2929C15.3166 14.9024 14.6834 14.9024 14.2929 15.2929L13 16.5858V11Z"
+                        fill="#fff" />
+                </svg>
+
+                <a class="underline cursor-pointer" target="_blank" href="/instruction.pdf">
+                    Инструкция по применению
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
